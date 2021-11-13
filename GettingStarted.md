@@ -307,8 +307,8 @@ Genotyping with additional information:
 Output columns are:
 1. region,
 1. cnv level -- mean RD normalized to mean autosomal RD level,
-1. e_val_1 -- p value calculated using t-test statistics between RD statistics in the region and global,
-1. e_val_2 -- p value from the probability of RD values within the region to be in the tails of a gaussian distribution of binned RD,
+1. e_val_1 -- e-value (p-value multiplied by genome size divided by bin size) calculated using t-test statistics between RD statistics in the region and global,
+1. e_val_2 -- e-value (p-value multiplied by genome size divided by bin size) from the probability of RD values within the region to be in the tails of a gaussian distribution of binned RD,
 1. q0 – fraction of reads mapped with q0 quality within call region,
 1. pN – fraction of reference genome gaps (Ns) within call region,
 1. dG -- distance from closest large (>100bp) gap in reference genome,
